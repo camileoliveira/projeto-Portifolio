@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    box-sizing: border-box;
+    color: #F6F6F6;
+
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap:80px;
+}
+
+.cabecalho_link {
+    color: #22D4FD;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.apresentation {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+
+}
+
+.apresentation_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.title_contrast {
+    color: #22D4FD;
+}
+
+.title {
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 2rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.38rem;
+    line-height: 30px;
+}
+
+
+.img_index {
+    border-radius: 16px;
+    width: 50%;
+    padding: 18px;
+    
+}
+
+.img_about{
+    border-radius: 16px;
+    width: 50%;
+    padding: 20px;
+    margin-top: 120px;
+}
+.apresentation_links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_links {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 400px;
+    margin: 20px;
+}
+
+.apresentation_links_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F6F6F6;
+    border: 2px solid #22D4FD;
+    width: 50%;
+    border-radius: 8px;
+    font-size: 1.13rem;
+    font-weight: 600px;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    gap: 16px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    padding-left: 0px;
+    width: 32px;
+    height: 32px;
+}
+
+.apresentation_links_link:hover {
+    background-color: #272727;
+}
+
+@media (max-width: 1380px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+    .apresentation{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentation_content{
+        width: auto; /*muito comum na versão mobile para ajustar todo o conteúdo ao tamanho da tela ou pode ser 100% */
+    }
+}
